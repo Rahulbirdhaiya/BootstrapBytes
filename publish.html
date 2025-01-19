@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Build website using bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body class="text-bg-light">
+    <!-- nav bar start here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">BootstrapBytes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Insight
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="action.html">Actions</a></li>
+                            <li><a class="dropdown-item" href="Building.html">Building Blocks</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="library.html">Popular library</a>
+                                <a class="dropdown-item" href="publish.html">Publish website</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">learn bootstrap</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-primary" type="submit">
+                        Search
+                    </button>
+                    <!-- additionally login signup buttons added -->
+                    <!-- <div class="mx-2 d-flex">
+                        <button type="button" class="btn btn-success mx-2" data-bs-target="#LoginModalToggle"
+                            data-bs-toggle="modal">
+                            Login
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-target="#SignupModalToggle2"
+                            data-bs-toggle="modal">
+                            Signup
+                        </button>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Steps to publish website easily using github -->
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h2>Hosting Website easily</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item"> <!-- [1] -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            <h2>1. Create a GitHub Account</h2>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="domainNameStepsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Github necessary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#domainNameStepsAccordion">
+                                        <div class="accordion-body">
+                                            If you don't already have a GitHub account, go to GitHub and sign up.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- [2] -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <h2>2. Create a New Repository</h2>
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="hostingProviderStepsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne"> <button class="accordion-button"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Know how to create it</button> </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne"
+                                        data-bs-parent="#hostingProviderStepsAccordion">
+                                        <div class="accordion-body"><ul>
+                                            <li>After logging into GitHub, click the + sign in the upper right corner and select New repository.
+                                            </li>
+                                            <li>Name the repository, for example, my-website. You can choose to make it public or private.</li>
+                                            <li>Initialize the repository with a README file (optional).</li>
+                                        </ul></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- [3] -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <h2>3. Upload Your Website Files</h2>
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="setupEnvironmentAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne"> <button class="accordion-button"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">No need to add Git in folders </button> </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#setupEnvironmentAccordion">
+                                        <div class="accordion-body">
+                                            <ol>
+                                                <li>Open your local project folder where your website files are stored (HTML, CSS, JS, images, etc.).
+                                                </li>
+                                                <li>On the GitHub repository page, click the Add file button, then select Upload files.</li>
+                                                <li>Drag and drop your website files into the GitHub interface, or choose files to upload.</li>
+                                                <li>Commit the changes by clicking on Commit changes.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- [4] -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <h2>4. Enable GitHub Pages</h2>
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="websiteStructureStepsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne"> <button class="accordion-button"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne"> Enable Hosting on Github
+                                        </button> </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne"
+                                        data-bs-parent="#websiteStructureStepsAccordion">
+                                        <div class="accordion-body"> <ul>
+                                            <li>Go to your GitHub repository's Settings (found in the menu at the top of your repository).</li>
+                                            <li>Scroll down to the GitHub Pages section.</li>
+                                            <li>In the Source dropdown, select the branch you want to use (usually main or master).</li>
+                                            <li>Choose the / (root) folder for the source if you're using the main repository folder.</li>
+                                            <li>After enabling GitHub Pages, a link will appear showing the URL of your live site. This will be something like https://username.github.io/repository-name.</li>
+                                        </ul></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- [5] -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            <h2>5. Access Your Website</h2>
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="resourcesStepsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne"> <button class="accordion-button"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne"> Time to acess website</button> </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#resourcesStepsAccordion">
+                                        <div class="accordion-body"><ul>
+                                            <li>Once the page refreshes, you should see a link to your website under the GitHub Pages section.</li>
+                                            <li>Click the link to visit your website live on the web.</li>
+                                        </ul> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- [6] -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            <h2>6. Optional: Custom Domain</h2>
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion" id="documentationStepsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne"> <button class="accordion-button"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">add cutom domain</button> </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#documentationStepsAccordion">
+                                        <div class="accordion-body"><ul>
+                                            <li>If you have a custom domain, you can configure it in the GitHub Pages settings by adding a <code>CNAME</code> file with your domain name (e.g., www.yourdomain.com).</li>
+                                        </ul></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-info"
+                    onclick="window.location.href='https://github.com/'">Start the journey
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- container added -->
+    <footer>
+        <div class="container" bis_skin_checked="1">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center" bis_skin_checked="1">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-bootstrap" viewBox="0 0 16 16">
+                            <path
+                                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z" />
+                            <path
+                                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3z" />
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 fs-4 text-body-secondary">© 2025 BootstrapBytes, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
